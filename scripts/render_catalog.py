@@ -4,7 +4,10 @@ from pathlib import Path
 from urllib.parse import quote_plus
 
 root = Path(__file__).resolve().parents[1]
-data = json.loads((root / "catalog/playlists.json").read_text())
+monthly = sorted((root / "catalog/monthly").glob("????-??.json"))
+if not monthly:
+    raise SystemExit("No monthly catalog files found")
+data = json.loads(monthly[-1].read_text())
 lines = [f'# YouTube Learning Lists — {data["edition"]}', '',
          'Six balanced playlists for a curious 10-year-old. Each has 12 hand-curated topics.', '',
          '> A parent should preview videos. Channels and videos can change after publication.', '']

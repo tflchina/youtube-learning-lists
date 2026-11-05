@@ -8,12 +8,24 @@ import os
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
-CATALOG = ROOT / "catalog" / "playlists.json"
+MONTHLY = ROOT / "catalog" / "monthly"
 SCOPES = ["https://www.googleapis.com/auth/youtube"]
 
 
-def load_catalog():
-    return json.loads(CATALOG.read_text())
+def catalog_path(edition: str | None = None) -> Path:
+    if edition:
+        path = MONTHLY / f"{edition}.json"
+        if not path.exists():
+            raise SystemExit(f"Edition not found: {path}")
+        return path
+    files = sorted(MONTHLY.glob("????-??.json"))
+    if not files:
+        raise SystemExit(f"No monthly catalogs found in {MONTHLY}")
+    return files[-1]
+
+
+def load_catalog(edition: str | None = None):
+    return json.loads(catalog_path(edition).read_text())
 
 
 def youtube_client(client_secret: Path):
@@ -65,8 +77,8 @@ def playlist_items(youtube, playlist_id: str) -> set[str]:
             return found
 
 
-def sync(youtube, privacy: str, dry_run: bool):
-    catalog = load_catalog()
+def sync(youtube, privacy: str, dry_run: bool, edition: str | None):
+    catalog = load_catalog(edition)
     current = existing_playlists(youtube) if not dry_run else {}
     resolved = {"edition": catalog["edition"], "playlists": []}
     for spec in catalog["playlists"]:
@@ -98,8 +110,9 @@ def main():
     parser.add_argument("--client-secret", type=Path, default=Path(os.getenv("YOUTUBE_CLIENT_SECRET", "client_secret.json")))
     parser.add_argument("--privacy", choices=["private", "unlisted", "public"], default="private")
     parser.add_argument("--dry-run", action="store_true")
+    parser.add_argument("--edition", help="Monthly edition in YYYY-MM format; defaults to latest")
     args = parser.parse_args()
-    sync(youtube_client(args.client_secret), args.privacy, args.dry_run)
+    sync(youtube_client(args.client_secret), args.privacy, args.dry_run, args.edition)
 
 
 if __name__ == "__main__":
