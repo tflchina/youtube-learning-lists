@@ -5,11 +5,24 @@ from __future__ import annotations
 import argparse
 import json
 import os
+import time
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
 MONTHLY = ROOT / "catalog" / "monthly"
 SCOPES = ["https://www.googleapis.com/auth/youtube"]
+
+
+def execute_with_retry(request, attempts: int = 5):
+    from googleapiclient.errors import HttpError
+
+    for attempt in range(attempts):
+        try:
+            return request.execute()
+        except HttpError as error:
+            if error.resp.status not in {409, 429, 500, 502, 503, 504} or attempt == attempts - 1:
+                raise
+            time.sleep(2 ** attempt)
 
 
 def catalog_path(edition: str | None = None) -> Path:
@@ -45,13 +58,24 @@ def youtube_client(client_secret: Path):
     return build("youtube", "v3", credentials=creds)
 
 
-def resolve_video(youtube, topic: str, channel: str) -> dict:
+def resolve_video(youtube, topic: str, channel: str, video_id: str | None = None) -> dict:
+    if video_id:
+        response = youtube.videos().list(part="snippet,status", id=video_id).execute()
+        if not response.get("items"):
+            raise RuntimeError(f"Pinned video is unavailable: {topic} ({video_id})")
+        item = response["items"][0]
+        if item.get("status", {}).get("privacyStatus") != "public":
+            raise RuntimeError(f"Pinned video is not public: {topic} ({video_id})")
+        return {"id": video_id, "title": item["snippet"]["title"],
+                "channel": item["snippet"]["channelTitle"]}
     result = youtube.search().list(
         part="snippet", q=f'{topic} "{channel}"', type="video", maxResults=5,
         safeSearch="strict", videoEmbeddable="true", relevanceLanguage="en"
     ).execute()
     exact = [x for x in result.get("items", []) if channel.lower() in x["snippet"]["channelTitle"].lower()]
-    item = (exact or result.get("items", []))[0]
+    if not exact:
+        raise RuntimeError(f'No strict channel match for "{topic}" from "{channel}"')
+    item = exact[0]
     return {"id": item["id"]["videoId"], "title": item["snippet"]["title"],
             "channel": item["snippet"]["channelTitle"]}
 
@@ -83,6 +107,10 @@ def sync(youtube, privacy: str, dry_run: bool, edition: str | None):
     resolved = {"edition": catalog["edition"], "playlists": []}
     for spec in catalog["playlists"]:
         videos = [resolve_video(youtube, *pick) for pick in spec["picks"]]
+        ids = [video["id"] for video in videos]
+        if len(ids) != len(set(ids)):
+            duplicates = sorted({video_id for video_id in ids if ids.count(video_id) > 1})
+            raise RuntimeError(f'Duplicate videos in {spec["title"]}: {duplicates}')
         resolved["playlists"].append({**spec, "videos": videos})
         print(f'\n{spec["title"]} ({len(videos)} videos)')
         for video in videos:
@@ -90,18 +118,22 @@ def sync(youtube, privacy: str, dry_run: bool, edition: str | None):
         if dry_run:
             continue
         playlist_id = current.get(spec["title"])
+        created_now = False
         if not playlist_id:
             created = youtube.playlists().insert(part="snippet,status", body={
                 "snippet": {"title": spec["title"], "description": spec["description"]},
                 "status": {"privacyStatus": privacy}
             }).execute()
             playlist_id = created["id"]
-        present = playlist_items(youtube, playlist_id)
+            created_now = True
+            current[spec["title"]] = playlist_id
+        # A new playlist can briefly return playlistNotFound while YouTube propagates it.
+        present = set() if created_now else playlist_items(youtube, playlist_id)
         for video in videos:
             if video["id"] not in present:
-                youtube.playlistItems().insert(part="snippet", body={"snippet": {
+                execute_with_retry(youtube.playlistItems().insert(part="snippet", body={"snippet": {
                     "playlistId": playlist_id, "resourceId": {"kind": "youtube#video", "videoId": video["id"]}
-                }}).execute()
+                }}))
     (ROOT / "catalog" / "resolved.json").write_text(json.dumps(resolved, indent=2) + "\n")
 
 

@@ -8,12 +8,66 @@
       "title": "Curious Minds: Science & Nature",
       "description": "Big questions, living things, Earth, space, and hands-on discoveries.",
       "picks": [
-        ["why is the sky blue", "SciShow Kids"], ["water cycle", "SciShow Kids"],
-        ["how seeds grow", "SciShow Kids"], ["amazing animal adaptations", "Nat Geo Kids"],
-        ["ocean animals", "Nat Geo Kids"], ["solar system", "Crash Course Kids"],
-        ["ecosystems", "Crash Course Kids"], ["volcanoes", "National Geographic"],
-        ["how bees make honey", "SciShow Kids"], ["states of matter", "Crash Course Kids"],
-        ["scientific method for kids", "SciShow Kids"], ["tardigrades", "Journey to the Microcosmos"]
+        [
+          "why is the sky blue",
+          "SciShow Kids",
+          "bcVr13Fw7w8"
+        ],
+        [
+          "water cycle",
+          "SciShow Kids",
+          "R0K7VKkksyc"
+        ],
+        [
+          "how seeds grow",
+          "SciShow Kids",
+          "WqgVks9NViQ"
+        ],
+        [
+          "amazing animal adaptations",
+          "Nat Geo Kids",
+          "Scd2e8roNK4"
+        ],
+        [
+          "ocean animals",
+          "Nat Geo Kids",
+          "qXYbLIEspqE"
+        ],
+        [
+          "solar system",
+          "Crash Course Kids",
+          "6FB0rDsR_rc"
+        ],
+        [
+          "ecosystems",
+          "Crash Course Kids",
+          "p15IrEuhYmo"
+        ],
+        [
+          "volcanoes",
+          "National Geographic",
+          "VNGUdObDoLk"
+        ],
+        [
+          "how bees make honey",
+          "SciShow Kids",
+          "A4YIpGQiD3w"
+        ],
+        [
+          "states of matter",
+          "Crash Course Kids",
+          "nlSemv2fLN8"
+        ],
+        [
+          "scientific method for kids",
+          "SciShow Kids",
+          "oEW_Qwj6ZCE"
+        ],
+        [
+          "tardigrades",
+          "Journey to the Microcosmos",
+          "kux1j1ccsgg"
+        ]
       ]
     },
     {
@@ -21,12 +75,66 @@
       "title": "Math Adventures: Patterns, Puzzles & Numbers",
       "description": "Clear explanations and playful problems for upper-elementary math.",
       "picks": [
-        ["fractions", "Math Antics"], ["fractions and decimals", "Math Antics"],
-        ["percentages", "Math Antics"], ["long division", "Math Antics"],
-        ["geometry basics", "Math Antics"], ["area", "Math Antics"],
-        ["perimeter", "Math Antics"], ["negative numbers", "Math Antics"],
-        ["order of operations", "Math Antics"], ["ratios and proportions", "Math Antics"],
-        ["prime numbers", "Numberphile"], ["mathematical patterns", "TED-Ed"]
+        [
+          "fractions",
+          "Math Antics",
+          "I1u3pM9g9o8"
+        ],
+        [
+          "fractions and decimals",
+          "Math Antics",
+          "Mst8iZjIpFE"
+        ],
+        [
+          "percentages",
+          "Math Antics",
+          "JeVSmq1Nrpw"
+        ],
+        [
+          "long division",
+          "Math Antics",
+          "LGqBQrUYua4"
+        ],
+        [
+          "geometry basics",
+          "Math Antics",
+          "IaoZhhx_I9s"
+        ],
+        [
+          "area",
+          "Math Antics",
+          "xCdxURXMdFY"
+        ],
+        [
+          "perimeter",
+          "Math Antics",
+          "AAY1bsazcgM"
+        ],
+        [
+          "negative numbers",
+          "Math Antics",
+          "OAoLCXpao6s"
+        ],
+        [
+          "order of operations",
+          "Math Antics",
+          "QGvyD-M8FVU"
+        ],
+        [
+          "ratios and proportions",
+          "Math Antics",
+          "RQ2nYUBVvqI"
+        ],
+        [
+          "prime numbers",
+          "Numberphile",
+          "YVvfY_lFUZ8"
+        ],
+        [
+          "mathematical patterns",
+          "TED-Ed",
+          "XMriWTvPXHI"
+        ]
       ]
     },
     {
@@ -34,12 +142,66 @@
       "title": "How Things Work: Physics & Engineering",
       "description": "Forces, motion, energy, machines, flight, and inventive engineering.",
       "picks": [
-        ["gravity", "Crash Course Kids"], ["force and motion", "Crash Course Kids"],
-        ["potential and kinetic energy", "Crash Course Kids"], ["simple machines", "SciShow Kids"],
-        ["how airplanes fly", "SciShow Kids"], ["electricity for kids", "SciShow Kids"],
-        ["magnets", "SciShow Kids"], ["sound waves", "Crash Course Kids"],
-        ["light and reflection", "Crash Course Kids"], ["engineering design process", "Crash Course Kids"],
-        ["build a paper bridge", "Science Buddies"], ["balloon science", "SciShow Kids"]
+        [
+          "gravity",
+          "Crash Course Kids",
+          "ljRlB6TuMOU"
+        ],
+        [
+          "Newton's laws of motion",
+          "Learn Bright",
+          "YnXU-AwAjGk"
+        ],
+        [
+          "potential and kinetic energy",
+          "Adventure Academy",
+          "zCKeniklH_c"
+        ],
+        [
+          "simple machines",
+          "SciShow Kids",
+          "q4U-HpEVLW8"
+        ],
+        [
+          "how airplanes fly",
+          "SciShow Kids",
+          "VLpSxHwfU04"
+        ],
+        [
+          "electricity for kids",
+          "SciShow Kids",
+          "HOFp8bHTN30"
+        ],
+        [
+          "magnets",
+          "SciShow Kids",
+          "5hH5radPWHo"
+        ],
+        [
+          "sound waves",
+          "SciShow Kids",
+          "3-xKZKxXuu0"
+        ],
+        [
+          "light and reflection",
+          "Crash Course Kids",
+          "1SN1BOpLZAs"
+        ],
+        [
+          "engineering design process",
+          "Crash Course Kids",
+          "fxJWin195kU"
+        ],
+        [
+          "build a paper bridge",
+          "Science Buddies",
+          "CqYGVW2Eu6Y"
+        ],
+        [
+          "balloon science",
+          "SciShow Kids",
+          "hHQpiCrZSIc"
+        ]
       ]
     },
     {
@@ -47,12 +209,66 @@
       "title": "Around the World: Culture & History",
       "description": "Stories, art, food, places, and civilizations from across the world.",
       "picks": [
-        ["ancient Egypt", "TED-Ed"], ["ancient Greece", "TED-Ed"],
-        ["Maya civilization", "TED-Ed"], ["Silk Road", "TED-Ed"],
-        ["history of writing", "TED-Ed"], ["Japanese art for kids", "Tate Kids"],
-        ["African art for kids", "Tate Kids"], ["Diwali for kids", "National Geographic Kids"],
-        ["Lunar New Year for kids", "PBS KIDS"], ["Day of the Dead for kids", "National Geographic Kids"],
-        ["world music instruments", "Kennedy Center Education"], ["how maps tell stories", "TED-Ed"]
+        [
+          "ancient Egypt",
+          "TED-Ed",
+          "fJBlEPOj4Fk"
+        ],
+        [
+          "ancient Greece",
+          "TED-Ed",
+          "LBALm7CeEG4"
+        ],
+        [
+          "Maya civilization",
+          "TED-Ed",
+          "ulHWR0Dp6Rk"
+        ],
+        [
+          "Silk Road",
+          "TED-Ed",
+          "vn3e37VWc0k"
+        ],
+        [
+          "history of writing",
+          "Extra History",
+          "HyjLt_RGEww"
+        ],
+        [
+          "Japanese art for kids",
+          "Tate Kids",
+          "IG_8vNTAXbY"
+        ],
+        [
+          "African art for kids",
+          "Tate Kids",
+          "UamZkDsmcFk"
+        ],
+        [
+          "Diwali Festival of Lights",
+          "National Geographic",
+          "HrrW3rO51ak"
+        ],
+        [
+          "Lunar New Year for kids",
+          "PBS KIDS",
+          "JG_MTQLxcjg"
+        ],
+        [
+          "Day of the Dead",
+          "National Geographic",
+          "_sSawpU81cI"
+        ],
+        [
+          "world music instruments",
+          "Kennedy Center Education",
+          "MO5bBmlw_PE"
+        ],
+        [
+          "how maps tell stories",
+          "TED-Ed",
+          "77hLX8jO6e4"
+        ]
       ]
     },
     {
@@ -60,12 +276,66 @@
       "title": "Make It! Coding, Art & Creativity",
       "description": "Create with code, drawing, music, animation, and practical projects.",
       "picks": [
-        ["Scratch coding beginner", "Scratch Team"], ["make a game in Scratch", "Scratch Team"],
-        ["animation in Scratch", "Scratch Team"], ["computer science algorithms for kids", "Code.org"],
-        ["internet safety for kids", "Common Sense Education"], ["draw a cartoon character", "Art for Kids Hub"],
-        ["one point perspective", "Tate Kids"], ["color theory for kids", "Tate Kids"],
-        ["stop motion animation for kids", "The Tinkering Studio"], ["make music with Chrome Music Lab", "Google for Education"],
-        ["paper engineering", "The Tinkering Studio"], ["cardboard automata", "The Tinkering Studio"]
+        [
+          "Getting Started with Scratch",
+          "Scratch Team",
+          "9jTPZfhuVro"
+        ],
+        [
+          "make a game in Scratch",
+          "Scratch Team",
+          "1jHvXakt1qw"
+        ],
+        [
+          "animation in Scratch",
+          "Scratch Team",
+          "uv8mbL-MC58"
+        ],
+        [
+          "computer science algorithms for kids",
+          "LearnFree",
+          "kM9ASKAni_s"
+        ],
+        [
+          "internet safety for kids",
+          "Common Sense Education",
+          "ottnH427Fr8"
+        ],
+        [
+          "draw a cartoon character",
+          "Art for Kids Hub",
+          "anO5XIMAgwQ"
+        ],
+        [
+          "one point perspective",
+          "Art Room Guru",
+          "gEVI1ZWLp4g"
+        ],
+        [
+          "color theory for kids",
+          "Tate Kids",
+          "1sfZ2gPGOW4"
+        ],
+        [
+          "stop motion animation for kids",
+          "Scitech WA",
+          "JH-gRZaJmu8"
+        ],
+        [
+          "make music with Chrome Music Lab",
+          "In Unison Music Lessons",
+          "9L-GMmooT0A"
+        ],
+        [
+          "paper bridge engineering",
+          "Science Buddies",
+          "CqYGVW2Eu6Y"
+        ],
+        [
+          "cardboard automata",
+          "Maryland Science Center",
+          "PalJeIp9N0Q"
+        ]
       ]
     },
     {
@@ -73,12 +343,66 @@
       "title": "Brain Break: Fun, Wonder & Relax",
       "description": "Gentle movement, drawing, riddles, animals, music, and calm screen breaks.",
       "picks": [
-        ["10 minute kids yoga", "Cosmic Kids Yoga"], ["mindfulness for kids", "GoNoodle"],
-        ["indoor recess brain break", "GoNoodle"], ["draw a funny animal", "Art for Kids Hub"],
-        ["animal bloopers", "Nat Geo Kids"], ["riddles for kids", "TED-Ed"],
-        ["marble machine music", "Wintergatan"], ["domino chain reaction", "Hevesh5"],
-        ["satisfying LEGO build", "LEGO"], ["aquarium relaxation", "Monterey Bay Aquarium"],
-        ["space ambient music", "NASA"], ["nature sounds for kids relaxation", "National Geographic Kids"]
+        [
+          "10 minute kids yoga",
+          "Cosmic Kids Yoga",
+          "7NWzS2xziI4"
+        ],
+        [
+          "mindfulness for kids",
+          "GoNoodle",
+          "bRkILioT_NA"
+        ],
+        [
+          "indoor recess brain break",
+          "GoNoodle",
+          "R9X3GDHvf50"
+        ],
+        [
+          "draw a funny animal",
+          "Art for Kids Hub",
+          "yC_nGu5Luh8"
+        ],
+        [
+          "animal bloopers",
+          "Nat Geo Kids",
+          "_Y6jij5US0E"
+        ],
+        [
+          "riddles for kids",
+          "TED-Ed",
+          "8EtdC9Bjubk"
+        ],
+        [
+          "marble machine music",
+          "Wintergatan",
+          "IvUU8joBb1Q"
+        ],
+        [
+          "domino chain reaction",
+          "Hevesh5",
+          "NlHAW1YTWiM"
+        ],
+        [
+          "satisfying LEGO build",
+          "TD BRICKS",
+          "Yw4dRjpwlZs"
+        ],
+        [
+          "aquarium relaxation",
+          "Monterey Bay Aquarium",
+          "g3PWYH1P7Oo"
+        ],
+        [
+          "space ambient music",
+          "Nature Relaxation Films",
+          "Y_plhk1FUQA"
+        ],
+        [
+          "nature sounds for kids relaxation",
+          "National Geographic Kids",
+          "onIk8sYYbXQ"
+        ]
       ]
     }
   ]

@@ -13,8 +13,10 @@ lines = [f'# YouTube Learning Lists — {data["edition"]}', '',
          '> A parent should preview videos. Channels and videos can change after publication.', '']
 for playlist in data["playlists"]:
     lines += [f'## {playlist["title"]}', '', playlist["description"], '']
-    for topic, channel in playlist["picks"]:
-        url = 'https://www.youtube.com/results?search_query=' + quote_plus(f'{topic} {channel}')
+    for pick in playlist["picks"]:
+        topic, channel = pick[:2]
+        url = (f'https://www.youtube.com/watch?v={pick[2]}' if len(pick) == 3 else
+               'https://www.youtube.com/results?search_query=' + quote_plus(f'{topic} {channel}'))
         lines.append(f'- [{topic.title()} — {channel}]({url})')
     lines.append('')
 (root / "LISTS.md").write_text('\n'.join(lines))

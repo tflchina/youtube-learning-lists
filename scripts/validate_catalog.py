@@ -14,6 +14,6 @@ for path in files:
         assert playlist["slug"] not in slugs
         slugs.add(playlist["slug"])
         assert 10 <= len(playlist["picks"]) <= 15
-        assert all(len(pick) == 2 and all(pick) for pick in playlist["picks"])
+        assert all(len(pick) in (2, 3) and all(pick) for pick in playlist["picks"])
     print(f'OK {path.stem}: {len(data["playlists"])} playlists, '
           f'{sum(len(x["picks"]) for x in data["playlists"])} picks')

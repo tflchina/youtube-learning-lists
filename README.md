@@ -6,8 +6,9 @@ physics, culture, creativity, and downtime. See the browsable [current lists](LI
 Each edition is preserved as a separate file under [`catalog/monthly`](catalog/monthly), named
 `YYYY-MM.json`. The scripts use the newest edition unless `--edition YYYY-MM` is supplied.
 
-The source catalog stores a topic plus a trusted channel for every pick. The importer resolves
-those picks with YouTube Data API `safeSearch=strict`, writes the exact results to
+The source catalog stores a topic, trusted channel, and—after review—a pinned video ID for every
+pick. Unpinned picks are resolved with YouTube Data API `safeSearch=strict`, and the importer writes
+the exact results to
 `catalog/resolved.json`, and creates private playlists by default.
 
 ## Load into a YouTube account
