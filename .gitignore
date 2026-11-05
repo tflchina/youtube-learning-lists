@@ -1,0 +1,6 @@
+.venv/
+__pycache__/
+.DS_Store
+client_secret*.json
+.youtube-token.json
+catalog/resolved.json

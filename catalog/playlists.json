@@ -1,0 +1,85 @@
+{
+  "edition": "2026-11",
+  "audience": "Curious learners around age 10",
+  "language": "en",
+  "playlists": [
+    {
+      "slug": "science-nature",
+      "title": "Curious Minds: Science & Nature",
+      "description": "Big questions, living things, Earth, space, and hands-on discoveries.",
+      "picks": [
+        ["why is the sky blue", "SciShow Kids"], ["water cycle", "SciShow Kids"],
+        ["how seeds grow", "SciShow Kids"], ["amazing animal adaptations", "Nat Geo Kids"],
+        ["ocean animals", "Nat Geo Kids"], ["solar system", "Crash Course Kids"],
+        ["ecosystems", "Crash Course Kids"], ["volcanoes", "National Geographic"],
+        ["how bees make honey", "SciShow Kids"], ["states of matter", "Crash Course Kids"],
+        ["scientific method for kids", "SciShow Kids"], ["tardigrades", "Journey to the Microcosmos"]
+      ]
+    },
+    {
+      "slug": "math-adventures",
+      "title": "Math Adventures: Patterns, Puzzles & Numbers",
+      "description": "Clear explanations and playful problems for upper-elementary math.",
+      "picks": [
+        ["fractions", "Math Antics"], ["fractions and decimals", "Math Antics"],
+        ["percentages", "Math Antics"], ["long division", "Math Antics"],
+        ["geometry basics", "Math Antics"], ["area", "Math Antics"],
+        ["perimeter", "Math Antics"], ["negative numbers", "Math Antics"],
+        ["order of operations", "Math Antics"], ["ratios and proportions", "Math Antics"],
+        ["prime numbers", "Numberphile"], ["mathematical patterns", "TED-Ed"]
+      ]
+    },
+    {
+      "slug": "physics-engineering",
+      "title": "How Things Work: Physics & Engineering",
+      "description": "Forces, motion, energy, machines, flight, and inventive engineering.",
+      "picks": [
+        ["gravity", "Crash Course Kids"], ["force and motion", "Crash Course Kids"],
+        ["potential and kinetic energy", "Crash Course Kids"], ["simple machines", "SciShow Kids"],
+        ["how airplanes fly", "SciShow Kids"], ["electricity for kids", "SciShow Kids"],
+        ["magnets", "SciShow Kids"], ["sound waves", "Crash Course Kids"],
+        ["light and reflection", "Crash Course Kids"], ["engineering design process", "Crash Course Kids"],
+        ["build a paper bridge", "Science Buddies"], ["balloon science", "SciShow Kids"]
+      ]
+    },
+    {
+      "slug": "world-culture-history",
+      "title": "Around the World: Culture & History",
+      "description": "Stories, art, food, places, and civilizations from across the world.",
+      "picks": [
+        ["ancient Egypt", "TED-Ed"], ["ancient Greece", "TED-Ed"],
+        ["Maya civilization", "TED-Ed"], ["Silk Road", "TED-Ed"],
+        ["history of writing", "TED-Ed"], ["Japanese art for kids", "Tate Kids"],
+        ["African art for kids", "Tate Kids"], ["Diwali for kids", "National Geographic Kids"],
+        ["Lunar New Year for kids", "PBS KIDS"], ["Day of the Dead for kids", "National Geographic Kids"],
+        ["world music instruments", "Kennedy Center Education"], ["how maps tell stories", "TED-Ed"]
+      ]
+    },
+    {
+      "slug": "coding-creativity",
+      "title": "Make It! Coding, Art & Creativity",
+      "description": "Create with code, drawing, music, animation, and practical projects.",
+      "picks": [
+        ["Scratch coding beginner", "Scratch Team"], ["make a game in Scratch", "Scratch Team"],
+        ["animation in Scratch", "Scratch Team"], ["computer science algorithms for kids", "Code.org"],
+        ["internet safety for kids", "Common Sense Education"], ["draw a cartoon character", "Art for Kids Hub"],
+        ["one point perspective", "Tate Kids"], ["color theory for kids", "Tate Kids"],
+        ["stop motion animation for kids", "The Tinkering Studio"], ["make music with Chrome Music Lab", "Google for Education"],
+        ["paper engineering", "The Tinkering Studio"], ["cardboard automata", "The Tinkering Studio"]
+      ]
+    },
+    {
+      "slug": "fun-relax",
+      "title": "Brain Break: Fun, Wonder & Relax",
+      "description": "Gentle movement, drawing, riddles, animals, music, and calm screen breaks.",
+      "picks": [
+        ["10 minute kids yoga", "Cosmic Kids Yoga"], ["mindfulness for kids", "GoNoodle"],
+        ["indoor recess brain break", "GoNoodle"], ["draw a funny animal", "Art for Kids Hub"],
+        ["animal bloopers", "Nat Geo Kids"], ["riddles for kids", "TED-Ed"],
+        ["marble machine music", "Wintergatan"], ["domino chain reaction", "Hevesh5"],
+        ["satisfying LEGO build", "LEGO"], ["aquarium relaxation", "Monterey Bay Aquarium"],
+        ["space ambient music", "NASA"], ["nature sounds for kids relaxation", "National Geographic Kids"]
+      ]
+    }
+  ]
+}
